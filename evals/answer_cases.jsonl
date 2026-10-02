@@ -1,0 +1,24 @@
+{"id": "ans-01", "message": "What time is check-in?", "expect": [["3:00 pm", "3 pm", "3pm", "15:00"]]}
+{"id": "ans-02", "message": "How much does late checkout cost?", "expect": [["30"]]}
+{"id": "ans-03", "message": "How much is parking per night?", "expect": [["18"]]}
+{"id": "ans-04", "message": "Can I charge my electric car, and what does it cost?", "expect": [["0.40", "0.4", "40 cents"]]}
+{"id": "ans-05", "message": "When is breakfast served at the weekend?", "expect": [["7:30"], ["11:00", "11 am", "11am"]]}
+{"id": "ans-06", "message": "Can I have dinner at the hotel restaurant on a Monday?", "expect": [["closed", "not open", "isn't open", "no dinner"]]}
+{"id": "ans-07", "message": "What's the fee for bringing a dog?", "expect": [["15"]]}
+{"id": "ans-08", "message": "Can my dog stay with us in a Family Suite?", "expect": [["Classic", "Sea View"]]}
+{"id": "ans-09", "message": "Until when can I cancel a flexible booking for free?", "expect": [["48"]]}
+{"id": "ans-10", "message": "Are saver rates refundable?", "expect": [["non-refundable", "not refundable", "no refund", "aren't refundable", "are not refundable"]]}
+{"id": "ans-11", "message": "Do you charge for a baby cot?", "expect": [["free", "no charge", "no extra charge"]]}
+{"id": "ans-12", "message": "How much is an extra bed for my 8 year old?", "expect": [["20"]]}
+{"id": "ans-13", "message": "What's the price of a Family Suite?", "expect": [["239"]]}
+{"id": "ans-14", "message": "What's the name of the wifi network?", "expect": [["Northwind-Guest"]]}
+{"id": "ans-15", "message": "Until what time can I leave my luggage on the day I leave?", "expect": [["10:00 pm", "10 pm", "10pm", "22:00"]]}
+{"id": "ans-16", "message": "What time does the bar close?", "expect": [["midnight", "12 am", "12am", "00:00"]]}
+{"id": "ans-17", "message": "Is there a charge for room service?", "expect": [["€5", "5 euro", "EUR 5", "5 €"]]}
+{"id": "ans-18", "message": "Do kids stay for free?", "expect": [["under 6", "under six", "6"]]}
+{"id": "ans-19", "message": "What happens if someone smokes in the room?", "expect": [["150"]]}
+{"id": "ans-20", "message": "Do you have rooms for wheelchair users?", "expect": [["roll-in", "wheelchair"]]}
+{"id": "ans-21", "history": [["visitor", "Do you allow dogs?"], ["ai", "Yes, dogs are welcome in Classic Double and Sea View Double rooms."]], "message": "how much is it?", "expect": [["15"]]}
+{"id": "ans-22", "message": "Do you have a swimming pool?", "expect": [["don't", "do not", "no information", "not able", "unable", "can't", "couldn't", "not mentioned", "doesn't", "isn't"]], "note": "not in the knowledge: must not invent one"}
+{"id": "ans-23", "message": "Is there an airport shuttle?", "expect": [["don't", "do not", "no information", "not able", "unable", "can't", "couldn't", "not mentioned", "doesn't", "isn't"]], "note": "not in the knowledge"}
+{"id": "ans-24", "message": "How much does the spa cost?", "expect": [["don't", "do not", "no information", "not able", "unable", "can't", "couldn't", "not mentioned", "doesn't", "isn't"]], "note": "not in the knowledge"}

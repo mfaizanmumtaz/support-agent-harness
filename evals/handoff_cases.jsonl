@@ -1,0 +1,60 @@
+{"id": "ask-01", "category": "asks for a person", "message": "Can I talk to a real person?", "expected": "handoff"}
+{"id": "ask-02", "category": "asks for a person", "message": "I'd like to speak with someone from your staff please", "expected": "handoff"}
+{"id": "ask-03", "category": "asks for a person", "message": "Transfer me to an agent", "expected": "handoff"}
+{"id": "ask-04", "category": "asks for a person", "message": "is there a human I can chat with", "expected": "handoff"}
+{"id": "ask-05", "category": "asks for a person", "message": "Get me a manager.", "expected": "handoff"}
+{"id": "ask-06", "category": "asks for a person", "message": "You're not helping. Let me speak to someone who actually works there.", "expected": "handoff"}
+{"id": "ask-07", "category": "asks for a person", "message": "¿Puedo hablar con una persona, por favor?", "expected": "handoff"}
+{"id": "ask-08", "category": "asks for a person", "message": "Kya main kisi insaan se baat kar sakta hoon?", "expected": "handoff"}
+{"id": "ask-09", "category": "asks for a person", "message": "Je voudrais parler à quelqu'un de la réception", "expected": "handoff"}
+{"id": "ask-10", "category": "asks for a person", "message": "operator", "expected": "handoff"}
+{"id": "ask-11", "category": "asks for a person", "message": "Can someone from the front desk message me here?", "expected": "handoff"}
+{"id": "ask-12", "category": "asks for a person", "message": "I don't want to talk to a bot.", "expected": "handoff"}
+{"id": "ask-13", "category": "asks for a person", "history": [["visitor", "Is there parking?"], ["ai", "Yes, our underground garage has 20 spaces at €18 per night. They can't be reserved in advance."]], "message": "ok but can a person confirm that for me?", "expected": "handoff"}
+{"id": "ask-14", "category": "asks for a person", "message": "Please have a staff member get in touch with me about my booking", "expected": "handoff"}
+{"id": "ask-15", "category": "asks for a person", "message": "Human please", "expected": "handoff"}
+{"id": "ask-16", "category": "asks for a person", "message": "Can you connect me with your team?", "expected": "handoff"}
+{"id": "rule-refund-01", "category": "rule: refund", "message": "I want my money back for last night, the shower didn't work at all", "expected": "handoff"}
+{"id": "rule-refund-02", "category": "rule: refund", "message": "You charged my card twice for the same booking, please refund one of them", "expected": "handoff"}
+{"id": "rule-refund-03", "category": "rule: refund", "message": "I left early because of the construction noise. Can I get a refund for the last two nights?", "expected": "handoff"}
+{"id": "rule-refund-04", "category": "rule: refund", "message": "Our room wasn't cleaned once during a four-night stay. I expect part of the payment back.", "expected": "handoff"}
+{"id": "rule-refund-05", "category": "rule: refund", "message": "I cancelled three days before arrival and I still haven't received my money back", "expected": "handoff"}
+{"id": "rule-group-01", "category": "rule: group booking", "message": "We need 15 rooms for a wedding in June", "expected": "handoff"}
+{"id": "rule-group-02", "category": "rule: group booking", "message": "Could you host our company offsite? We'd need about 25 rooms for two nights.", "expected": "handoff"}
+{"id": "rule-group-03", "category": "rule: group booking", "message": "I'd like to book 12 rooms for our football club's away trip", "expected": "handoff"}
+{"id": "rule-group-04", "category": "rule: group booking", "message": "Group booking for 40 guests, roughly 20 rooms, in October", "expected": "handoff"}
+{"id": "rule-group-05", "category": "rule: group booking", "message": "Is there a discount if we take a whole floor, around 14 rooms?", "expected": "handoff"}
+{"id": "rule-staff-01", "category": "rule: staff complaint", "message": "The receptionist was really rude to me last night", "expected": "handoff"}
+{"id": "rule-staff-02", "category": "rule: staff complaint", "message": "Your night porter shouted at my kids in the lobby", "expected": "handoff"}
+{"id": "rule-staff-03", "category": "rule: staff complaint", "message": "I want to complain about the waiter at dinner, he was very disrespectful to my wife", "expected": "handoff"}
+{"id": "rule-staff-04", "category": "rule: staff complaint", "message": "The cleaner went through my suitcase while I was out", "expected": "handoff"}
+{"id": "rule-staff-05", "category": "rule: staff complaint", "message": "Staff at check-in ignored us for 20 minutes while they chatted", "expected": "handoff"}
+{"id": "rule-lost-01", "category": "rule: lost property", "message": "I think I left my laptop charger in room 204", "expected": "handoff"}
+{"id": "rule-lost-02", "category": "rule: lost property", "message": "My daughter forgot her teddy bear in our room yesterday, she's heartbroken", "expected": "handoff"}
+{"id": "rule-lost-03", "category": "rule: lost property", "message": "I lost my wedding ring during my stay, has anyone found it?", "expected": "handoff"}
+{"id": "rule-lost-04", "category": "rule: lost property", "message": "I left my passport in the room safe and checked out this morning!", "expected": "handoff"}
+{"id": "rule-lost-05", "category": "rule: lost property", "message": "Did housekeeping find a black jacket in room 12?", "expected": "handoff"}
+{"id": "faq-01", "category": "ordinary question", "message": "What time is check-in?", "expected": "none"}
+{"id": "faq-02", "category": "ordinary question", "message": "Do you have parking?", "expected": "none"}
+{"id": "faq-03", "category": "ordinary question", "message": "Is breakfast included in the price?", "expected": "none"}
+{"id": "faq-04", "category": "ordinary question", "message": "Can I bring my dog?", "expected": "none"}
+{"id": "faq-05", "category": "ordinary question", "message": "Is the restaurant open on Mondays?", "expected": "none"}
+{"id": "faq-06", "category": "ordinary question", "message": "What's the wifi called?", "expected": "none"}
+{"id": "faq-07", "category": "ordinary question", "message": "Do you have wheelchair accessible rooms?", "expected": "none"}
+{"id": "faq-08", "category": "ordinary question", "message": "How much is a Family Suite?", "expected": "none"}
+{"id": "faq-09", "category": "ordinary question", "message": "Can I leave my bags after checkout?", "expected": "none"}
+{"id": "faq-10", "category": "ordinary question", "message": "Is there room service?", "expected": "none"}
+{"id": "near-01", "category": "near miss", "message": "What's your refund policy if I cancel?", "expected": "none"}
+{"id": "near-02", "category": "near miss", "message": "How long does a refund take to reach my card after I cancel a flexible booking?", "expected": "none"}
+{"id": "near-03", "category": "near miss", "message": "Can I book 5 rooms for my family reunion?", "expected": "none"}
+{"id": "near-04", "category": "near miss", "message": "The staff were lovely, thank you so much!", "expected": "none"}
+{"id": "near-05", "category": "near miss", "message": "Is the front desk staffed at night?", "expected": "none"}
+{"id": "near-06", "category": "near miss", "message": "Do your receptionists speak German?", "expected": "none"}
+{"id": "near-07", "category": "near miss", "message": "What happens to things guests leave behind?", "expected": "none"}
+{"id": "near-08", "category": "near miss", "message": "Do humans read these chats?", "expected": "none"}
+{"id": "near-09", "category": "near miss", "message": "thanks, that's all I needed!", "expected": "none"}
+{"id": "near-10", "category": "near miss", "message": "Do you charge for a baby cot?", "expected": "none"}
+{"id": "near-11", "category": "near miss", "message": "I'm so excited for our anniversary trip next week!", "expected": "none"}
+{"id": "near-12", "category": "near miss", "message": "Is smoking allowed on the balcony?", "expected": "none"}
+{"id": "near-13", "category": "near miss", "message": "Is the price per room or per person?", "expected": "none"}
+{"id": "near-14", "category": "near miss", "history": [["visitor", "Can I talk to someone about late checkout?"], ["ai", "Of course, I'm connecting you with a teammate now."], ["human", "Hi, this is Jo from the front desk. Late checkout is booked for you until 2 pm."]], "message": "Perfect, thanks Jo! One more thing, what time does the bar close?", "expected": "none"}

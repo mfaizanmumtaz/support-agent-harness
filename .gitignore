@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.env
+# Embeddings of the sample knowledge, cached so evals don't pay for them twice.
+.cache/

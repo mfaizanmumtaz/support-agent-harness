@@ -1,0 +1,2345 @@
+{
+  "model": "gpt-6-luna",
+  "cases": [
+    {
+      "id": "ask-01",
+      "category": "asks for a person",
+      "message": "Can I talk to a real person?",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "visitor_asked",
+      "jev_signals": {
+        "visitor_asked": 0.98,
+        "frustrated": 0.3,
+        "sensitive": 0.26
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.03,
+        "Group bookings of more than 10 rooms.": 0.06,
+        "Complaints about staff.": 0.06,
+        "Lost property: the guest left something behind.": 0.03
+      },
+      "jev_ms": 778,
+      "jev_cost": 2.3352e-05,
+      "llm_only_reply": "I’m connecting you with a teammate, who will reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 4401,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3420
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3759
+        }
+      }
+    },
+    {
+      "id": "ask-02",
+      "category": "asks for a person",
+      "message": "I'd like to speak with someone from your staff please",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "visitor_asked",
+      "jev_signals": {
+        "visitor_asked": 0.97,
+        "frustrated": 0.11,
+        "sensitive": 0.25
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.03,
+        "Group bookings of more than 10 rooms.": 0.05,
+        "Complaints about staff.": 0.09,
+        "Lost property: the guest left something behind.": 0.03
+      },
+      "jev_ms": 504,
+      "jev_cost": 2.3478e-05,
+      "llm_only_reply": "I’m connecting you with a member of our team, who will reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 4631,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3810
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a member of our team, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3382
+        }
+      }
+    },
+    {
+      "id": "ask-03",
+      "category": "asks for a person",
+      "message": "Transfer me to an agent",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "visitor_asked",
+      "jev_signals": {
+        "visitor_asked": 0.99,
+        "frustrated": 0.35,
+        "sensitive": 0.27
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.03,
+        "Group bookings of more than 10 rooms.": 0.06,
+        "Complaints about staff.": 0.07,
+        "Lost property: the guest left something behind.": 0.03
+      },
+      "jev_ms": 498,
+      "jev_cost": 2.3226e-05,
+      "llm_only_reply": "I’m connecting you with a teammate, who will reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 4661,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3555
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3230
+        }
+      }
+    },
+    {
+      "id": "ask-04",
+      "category": "asks for a person",
+      "message": "is there a human I can chat with",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "visitor_asked",
+      "jev_signals": {
+        "visitor_asked": 0.99,
+        "frustrated": 0.13,
+        "sensitive": 0.13
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.06,
+        "Complaints about staff.": 0.04,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 725,
+      "jev_cost": 2.3352e-05,
+      "llm_only_reply": "I’m connecting you with a teammate, who will reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 4380,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 4223
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3030
+        }
+      }
+    },
+    {
+      "id": "ask-05",
+      "category": "asks for a person",
+      "message": "Get me a manager.",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "visitor_asked",
+      "jev_signals": {
+        "visitor_asked": 0.95,
+        "frustrated": 0.75,
+        "sensitive": 0.72
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.03,
+        "Group bookings of more than 10 rooms.": 0.04,
+        "Complaints about staff.": 0.37,
+        "Lost property: the guest left something behind.": 0.03
+      },
+      "jev_ms": 529,
+      "jev_cost": 2.3226e-05,
+      "llm_only_reply": "I’m connecting you with a teammate who will reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 4707,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3523
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3105
+        }
+      }
+    },
+    {
+      "id": "ask-06",
+      "category": "asks for a person",
+      "message": "You're not helping. Let me speak to someone who actually works there.",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "visitor_asked",
+      "jev_signals": {
+        "visitor_asked": 0.97,
+        "frustrated": 0.97,
+        "sensitive": 0.79
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.04,
+        "Group bookings of more than 10 rooms.": 0.04,
+        "Complaints about staff.": 0.79,
+        "Lost property: the guest left something behind.": 0.03
+      },
+      "jev_ms": 731,
+      "jev_cost": 2.3646e-05,
+      "llm_only_reply": "I’m connecting you with a teammate, who will reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 4483,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3729
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3083
+        }
+      }
+    },
+    {
+      "id": "ask-07",
+      "category": "asks for a person",
+      "message": "¿Puedo hablar con una persona, por favor?",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "visitor_asked",
+      "jev_signals": {
+        "visitor_asked": 0.98,
+        "frustrated": 0.13,
+        "sensitive": 0.27
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.03,
+        "Group bookings of more than 10 rooms.": 0.06,
+        "Complaints about staff.": 0.06,
+        "Lost property: the guest left something behind.": 0.03
+      },
+      "jev_ms": 558,
+      "jev_cost": 2.3478e-05,
+      "llm_only_reply": "Claro. Te estoy poniendo en contacto con una persona del equipo, que te responderá por aquí.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3476,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "Claro, te pongo en contacto con una persona del equipo, que te responderá aquí en breve.",
+          "failed": null,
+          "latency_ms": 3544
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "Claro, te pongo en contacto con un miembro del equipo, que te responderá aquí en breve.",
+          "failed": null,
+          "latency_ms": 3189
+        }
+      }
+    },
+    {
+      "id": "ask-08",
+      "category": "asks for a person",
+      "message": "Kya main kisi insaan se baat kar sakta hoon?",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "visitor_asked",
+      "jev_signals": {
+        "visitor_asked": 0.97,
+        "frustrated": 0.13,
+        "sensitive": 0.25
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.03,
+        "Group bookings of more than 10 rooms.": 0.06,
+        "Complaints about staff.": 0.07,
+        "Lost property: the guest left something behind.": 0.03
+      },
+      "jev_ms": 519,
+      "jev_cost": 2.3646e-05,
+      "llm_only_reply": "ज़रूर—मैं आपको हमारी टीम के सदस्य से जोड़ रहा हूँ। वे यहीं आपको जवाब देंगे।",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3558,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "ज़रूर—मैं आपको हमारी टीम के सदस्य से जोड़ रहा हूँ। वे यहीं जवाब देंगे।",
+          "failed": null,
+          "latency_ms": 3371
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "Main aapko apni team ke ek sadasya se connect kar rahi hoon. Woh jald hi yahin jawab denge.",
+          "failed": null,
+          "latency_ms": 3235
+        }
+      }
+    },
+    {
+      "id": "ask-09",
+      "category": "asks for a person",
+      "message": "Je voudrais parler à quelqu'un de la réception",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "visitor_asked",
+      "jev_signals": {
+        "visitor_asked": 0.96,
+        "frustrated": 0.1,
+        "sensitive": 0.23
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.05,
+        "Complaints about staff.": 0.08,
+        "Lost property: the guest left something behind.": 0.03
+      },
+      "jev_ms": 506,
+      "jev_cost": 2.3436e-05,
+      "llm_only_reply": "Je vous mets en contact avec un membre de notre équipe de réception, qui vous répondra ici.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3519,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "Je vous mets en contact avec un membre de l’équipe de la réception, qui vous répondra ici.",
+          "failed": null,
+          "latency_ms": 3584
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "Je vous mets en contact avec un membre de notre équipe, qui vous répondra ici dès que possible.",
+          "failed": null,
+          "latency_ms": 3383
+        }
+      }
+    },
+    {
+      "id": "ask-10",
+      "category": "asks for a person",
+      "message": "operator",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.7,
+        "frustrated": 0.07,
+        "sensitive": 0.12
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.05,
+        "Group bookings of more than 10 rooms.": 0.07,
+        "Complaints about staff.": 0.07,
+        "Lost property: the guest left something behind.": 0.05
+      },
+      "jev_ms": 502,
+      "jev_cost": 2.3058e-05,
+      "llm_only_reply": "I’m connecting you with a teammate who will reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3764,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 4982
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3728
+        }
+      }
+    },
+    {
+      "id": "ask-11",
+      "category": "asks for a person",
+      "message": "Can someone from the front desk message me here?",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "visitor_asked",
+      "jev_signals": {
+        "visitor_asked": 0.96,
+        "frustrated": 0.1,
+        "sensitive": 0.25
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.05,
+        "Complaints about staff.": 0.08,
+        "Lost property: the guest left something behind.": 0.04
+      },
+      "jev_ms": 406,
+      "jev_cost": 2.3436e-05,
+      "llm_only_reply": "I’m connecting you with a teammate from the front desk, who will reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 4024,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate from the front desk, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3391
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate from the front desk, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 4115
+        }
+      }
+    },
+    {
+      "id": "ask-12",
+      "category": "asks for a person",
+      "message": "I don't want to talk to a bot.",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.78,
+        "frustrated": 0.69,
+        "sensitive": 0.19
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.04,
+        "Complaints about staff.": 0.26,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 585,
+      "jev_cost": 2.3436e-05,
+      "llm_only_reply": "I’m connecting you with a teammate, who will reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3971,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3516
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 4290
+        }
+      }
+    },
+    {
+      "id": "ask-13",
+      "category": "asks for a person",
+      "message": "ok but can a person confirm that for me?",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.81,
+        "frustrated": 0.09,
+        "sensitive": 0.08
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.03,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 382,
+      "jev_cost": 2.4696e-05,
+      "llm_only_reply": "I’m connecting you with a teammate, who will reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3255,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate who can confirm the parking details. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 3565
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate who can confirm the parking details here.",
+          "failed": null,
+          "latency_ms": 5229
+        }
+      }
+    },
+    {
+      "id": "ask-14",
+      "category": "asks for a person",
+      "message": "Please have a staff member get in touch with me about my booking",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "visitor_asked",
+      "jev_signals": {
+        "visitor_asked": 0.96,
+        "frustrated": 0.11,
+        "sensitive": 0.25
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.03,
+        "Group bookings of more than 10 rooms.": 0.08,
+        "Complaints about staff.": 0.05,
+        "Lost property: the guest left something behind.": 0.03
+      },
+      "jev_ms": 480,
+      "jev_cost": 2.3562e-05,
+      "llm_only_reply": "I’ve connected you with a teammate, who will reply here about your booking.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3423,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate who will follow up with you here about your booking.",
+          "failed": null,
+          "latency_ms": 3254
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3023
+        }
+      }
+    },
+    {
+      "id": "ask-15",
+      "category": "asks for a person",
+      "message": "Human please",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "visitor_asked",
+      "jev_signals": {
+        "visitor_asked": 0.95,
+        "frustrated": 0.69,
+        "sensitive": 0.23
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.03,
+        "Group bookings of more than 10 rooms.": 0.05,
+        "Complaints about staff.": 0.09,
+        "Lost property: the guest left something behind.": 0.03
+      },
+      "jev_ms": 447,
+      "jev_cost": 2.31e-05,
+      "llm_only_reply": "I’m connecting you with a teammate, who will reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3985,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3254
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 4298
+        }
+      }
+    },
+    {
+      "id": "ask-16",
+      "category": "asks for a person",
+      "message": "Can you connect me with your team?",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "visitor_asked",
+      "jev_signals": {
+        "visitor_asked": 0.91,
+        "frustrated": 0.1,
+        "sensitive": 0.17
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.03,
+        "Group bookings of more than 10 rooms.": 0.06,
+        "Complaints about staff.": 0.06,
+        "Lost property: the guest left something behind.": 0.03
+      },
+      "jev_ms": 357,
+      "jev_cost": 2.3352e-05,
+      "llm_only_reply": "I’m connecting you with a teammate, who will reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3356,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 2905
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 4035
+        }
+      }
+    },
+    {
+      "id": "rule-refund-01",
+      "category": "rule: refund",
+      "message": "I want my money back for last night, the shower didn't work at all",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.03,
+        "frustrated": 0.94,
+        "sensitive": 0.72
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.98,
+        "Group bookings of more than 10 rooms.": 0.04,
+        "Complaints about staff.": 0.05,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 382,
+      "jev_cost": 2.3688e-05,
+      "llm_only_reply": "I’m connecting you with a teammate to review your refund request. They’ll reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3769,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly. Guest relations reviews refund requests after a stay, including concerns about room issues.",
+          "failed": null,
+          "latency_ms": 3032
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly to review your refund request.",
+          "failed": null,
+          "latency_ms": 3043
+        }
+      }
+    },
+    {
+      "id": "rule-refund-02",
+      "category": "rule: refund",
+      "message": "You charged my card twice for the same booking, please refund one of them",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.02,
+        "frustrated": 0.67,
+        "sensitive": 0.65
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.98,
+        "Group bookings of more than 10 rooms.": 0.04,
+        "Complaints about staff.": 0.05,
+        "Lost property: the guest left something behind.": 0.01
+      },
+      "jev_ms": 390,
+      "jev_cost": 2.3646e-05,
+      "llm_only_reply": "I’m connecting you with a teammate to review the duplicate charge and help with the refund. They’ll reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3898,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate who will review the duplicate charge and reply here shortly.",
+          "failed": null,
+          "latency_ms": 3306
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate to review the duplicate charge and help with the refund. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 3370
+        }
+      }
+    },
+    {
+      "id": "rule-refund-03",
+      "category": "rule: refund",
+      "message": "I left early because of the construction noise. Can I get a refund for the last two nights?",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.02,
+        "frustrated": 0.52,
+        "sensitive": 0.54
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.98,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.04,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 411,
+      "jev_cost": 2.3856e-05,
+      "llm_only_reply": "I’m connecting you with a teammate from guest relations to review your request for a refund for the two unused nights. They’ll reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 4671,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly to review your refund request for the last two nights.",
+          "failed": null,
+          "latency_ms": 3897
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with our guest relations team to review your refund request. A teammate will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3372
+        }
+      }
+    },
+    {
+      "id": "rule-refund-04",
+      "category": "rule: refund",
+      "message": "Our room wasn't cleaned once during a four-night stay. I expect part of the payment back.",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.03,
+        "frustrated": 0.94,
+        "sensitive": 0.89
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.98,
+        "Group bookings of more than 10 rooms.": 0.04,
+        "Complaints about staff.": 0.69,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 465,
+      "jev_cost": 2.3856e-05,
+      "llm_only_reply": "I’m connecting you with a teammate to review your refund request. They’ll reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3891,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate from guest relations to review your refund request. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 3958
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate from guest relations to review your refund request. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 3231
+        }
+      }
+    },
+    {
+      "id": "rule-refund-05",
+      "category": "rule: refund",
+      "message": "I cancelled three days before arrival and I still haven't received my money back",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.02,
+        "frustrated": 0.82,
+        "sensitive": 0.79
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.97,
+        "Group bookings of more than 10 rooms.": 0.04,
+        "Complaints about staff.": 0.05,
+        "Lost property: the guest left something behind.": 0.01
+      },
+      "jev_ms": 400,
+      "jev_cost": 2.3646e-05,
+      "llm_only_reply": "I’m connecting you with a teammate to check the refund status. Flexible booking refunds are returned to the original card within 5–10 working days.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 5246,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate to review your cancellation and refund status. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 3685
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate to look into your refund. Flexible-booking refunds are returned to the original card within 5–10 working days, and they’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 4166
+        }
+      }
+    },
+    {
+      "id": "rule-group-01",
+      "category": "rule: group booking",
+      "message": "We need 15 rooms for a wedding in June",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.01,
+        "frustrated": 0.02,
+        "sensitive": 0.03
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.97,
+        "Complaints about staff.": 0.02,
+        "Lost property: the guest left something behind.": 0.01
+      },
+      "jev_ms": 396,
+      "jev_cost": 2.3478e-05,
+      "llm_only_reply": "I’m connecting you with our events team, who handle group bookings of more than 10 rooms. They’ll reply here shortly about your wedding booking.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3775,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with our events team, who handle bookings of more than 10 rooms and can discuss group rates and a private breakfast room. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 4556
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with our events team, who handle bookings of more than 10 rooms and can discuss group rates and a private breakfast room. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 3410
+        }
+      }
+    },
+    {
+      "id": "rule-group-02",
+      "category": "rule: group booking",
+      "message": "Could you host our company offsite? We'd need about 25 rooms for two nights.",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.02,
+        "frustrated": 0.02,
+        "sensitive": 0.03
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.97,
+        "Complaints about staff.": 0.02,
+        "Lost property: the guest left something behind.": 0.01
+      },
+      "jev_ms": 475,
+      "jev_cost": 2.3856e-05,
+      "llm_only_reply": "I’m connecting you with our events team, who handle group bookings of this size. They’ll reply here shortly to discuss your offsite.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3884,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with our events team, who handles group bookings of more than 10 rooms and can discuss your offsite. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 4104
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with our events team, who handle group bookings of more than 10 rooms and can discuss group rates and a private breakfast room. A teammate will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3585
+        }
+      }
+    },
+    {
+      "id": "rule-group-03",
+      "category": "rule: group booking",
+      "message": "I'd like to book 12 rooms for our football club's away trip",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.02,
+        "frustrated": 0.02,
+        "sensitive": 0.04
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.97,
+        "Complaints about staff.": 0.02,
+        "Lost property: the guest left something behind.": 0.01
+      },
+      "jev_ms": 424,
+      "jev_cost": 2.3688e-05,
+      "llm_only_reply": "I’m connecting you with a teammate from our events team, who handles bookings of more than 10 rooms and can discuss group rates and a private breakfast room. They’ll reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3763,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate from our events team, who can help with your 12-room group booking and group rates. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 4673
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate from our events team, who can help with your 12-room booking and group arrangements. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 4585
+        }
+      }
+    },
+    {
+      "id": "rule-group-04",
+      "category": "rule: group booking",
+      "message": "Group booking for 40 guests, roughly 20 rooms, in October",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.01,
+        "frustrated": 0.02,
+        "sensitive": 0.04
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.97,
+        "Complaints about staff.": 0.02,
+        "Lost property: the guest left something behind.": 0.01
+      },
+      "jev_ms": 437,
+      "jev_cost": 2.3688e-05,
+      "llm_only_reply": "Your booking is for roughly 20 rooms, so our events team will help with the group arrangements. I’m connecting you with a teammate who will reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 4762,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with our events team, who handle bookings of more than 10 rooms and can discuss group rates and a private breakfast room. A teammate will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3532
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with our events team, who can help with group rates and arrangements for your 20-room booking. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 3550
+        }
+      }
+    },
+    {
+      "id": "rule-group-05",
+      "category": "rule: group booking",
+      "message": "Is there a discount if we take a whole floor, around 14 rooms?",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.02,
+        "frustrated": 0.02,
+        "sensitive": 0.03
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.95,
+        "Complaints about staff.": 0.02,
+        "Lost property: the guest left something behind.": 0.01
+      },
+      "jev_ms": 637,
+      "jev_cost": 2.373e-05,
+      "llm_only_reply": "I’m connecting you with our events team, who handle bookings of more than 10 rooms and can discuss group rates for your 14-room booking. They’ll reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 4925,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with our events team, who handle bookings of more than 10 rooms and can discuss group rates. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 4214
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with our events team, who handle bookings of more than 10 rooms and can discuss group rates. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 3864
+        }
+      }
+    },
+    {
+      "id": "rule-staff-01",
+      "category": "rule: staff complaint",
+      "message": "The receptionist was really rude to me last night",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.06,
+        "frustrated": 0.87,
+        "sensitive": 0.96
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.04,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.97,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 374,
+      "jev_cost": 2.352e-05,
+      "llm_only_reply": "I’m sorry you had that experience. I’m connecting you with a teammate, who will reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3970,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m sorry you had that experience. I’m connecting you with a teammate who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 4295
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m sorry you had that experience. I’m connecting you with a teammate who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3972
+        }
+      }
+    },
+    {
+      "id": "rule-staff-02",
+      "category": "rule: staff complaint",
+      "message": "Your night porter shouted at my kids in the lobby",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.09,
+        "frustrated": 0.94,
+        "sensitive": 0.97
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.05,
+        "Group bookings of more than 10 rooms.": 0.04,
+        "Complaints about staff.": 0.96,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 655,
+      "jev_cost": 2.3436e-05,
+      "llm_only_reply": "I’m connecting you with a teammate to help address your concern. They’ll reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 4459,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m sorry this happened to your family. I’m connecting you with a teammate, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3643
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m sorry that happened to your family. I’m connecting you with a teammate who will follow up here shortly.",
+          "failed": null,
+          "latency_ms": 3122
+        }
+      }
+    },
+    {
+      "id": "rule-staff-03",
+      "category": "rule: staff complaint",
+      "message": "I want to complain about the waiter at dinner, he was very disrespectful to my wife",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.1,
+        "frustrated": 0.92,
+        "sensitive": 0.97
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.03,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.98,
+        "Lost property: the guest left something behind.": 0.01
+      },
+      "jev_ms": 403,
+      "jev_cost": 2.3856e-05,
+      "llm_only_reply": "I’m sorry that happened to your wife. I’m connecting you with a teammate, who will reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 4058,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m sorry to hear that your wife was treated disrespectfully. I’m connecting you with a teammate who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 4455
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly to discuss your complaint.",
+          "failed": null,
+          "latency_ms": 3630
+        }
+      }
+    },
+    {
+      "id": "rule-staff-04",
+      "category": "rule: staff complaint",
+      "message": "The cleaner went through my suitcase while I was out",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.06,
+        "frustrated": 0.82,
+        "sensitive": 0.97
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.11,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.94,
+        "Lost property: the guest left something behind.": 0.04
+      },
+      "jev_ms": 443,
+      "jev_cost": 2.3436e-05,
+      "llm_only_reply": "I’m sorry this happened. I’m connecting you with a teammate who will reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3790,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3264
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3690
+        }
+      }
+    },
+    {
+      "id": "rule-staff-05",
+      "category": "rule: staff complaint",
+      "message": "Staff at check-in ignored us for 20 minutes while they chatted",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.05,
+        "frustrated": 0.93,
+        "sensitive": 0.96
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.05,
+        "Group bookings of more than 10 rooms.": 0.05,
+        "Complaints about staff.": 0.96,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 380,
+      "jev_cost": 2.3646e-05,
+      "llm_only_reply": "I’m sorry you were left waiting and felt ignored at check-in. I’m connecting you with a teammate who will reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 4625,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m sorry you were left waiting. I’m connecting you with a teammate who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3301
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m sorry you were kept waiting while staff chatted. I’m connecting you with a teammate who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 4622
+        }
+      }
+    },
+    {
+      "id": "rule-lost-01",
+      "category": "rule: lost property",
+      "message": "I think I left my laptop charger in room 204",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.03,
+        "frustrated": 0.07,
+        "sensitive": 0.2
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.03,
+        "Lost property: the guest left something behind.": 0.97
+      },
+      "jev_ms": 589,
+      "jev_cost": 2.3562e-05,
+      "llm_only_reply": "I’m connecting you with our guest relations team to help locate your laptop charger. Items left behind are kept for 60 days, and they can be posted at cost.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 4411,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate who can help check for your laptop charger. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 3263
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate who can help check for your laptop charger and arrange next steps. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 3359
+        }
+      }
+    },
+    {
+      "id": "rule-lost-02",
+      "category": "rule: lost property",
+      "message": "My daughter forgot her teddy bear in our room yesterday, she's heartbroken",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.03,
+        "frustrated": 0.17,
+        "sensitive": 0.31
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.03,
+        "Lost property: the guest left something behind.": 0.97
+      },
+      "jev_ms": 371,
+      "jev_cost": 2.3772e-05,
+      "llm_only_reply": "I’m connecting you with a teammate who can help look for the teddy bear. They’ll reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3260,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate who can help look for the teddy bear. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 3933
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m sorry—that must be upsetting for your daughter. I’ve connected you with a teammate, who will reply here shortly to help with the teddy bear.",
+          "failed": null,
+          "latency_ms": 3830
+        }
+      }
+    },
+    {
+      "id": "rule-lost-03",
+      "category": "rule: lost property",
+      "message": "I lost my wedding ring during my stay, has anyone found it?",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.07,
+        "frustrated": 0.24,
+        "sensitive": 0.69
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.03,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.04,
+        "Lost property: the guest left something behind.": 0.6
+      },
+      "jev_ms": 534,
+      "jev_cost": 2.3604e-05,
+      "llm_only_reply": "I’m connecting you with a teammate who can check whether your wedding ring has been found. Lost items are kept for 60 days.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3518,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with our guest relations team to check whether your wedding ring has been found. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 3867
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with our guest relations team, who can check whether your wedding ring has been found. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 7747
+        }
+      }
+    },
+    {
+      "id": "rule-lost-04",
+      "category": "rule: lost property",
+      "message": "I left my passport in the room safe and checked out this morning!",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.02,
+        "frustrated": 0.09,
+        "sensitive": 0.75
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.03,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.03,
+        "Lost property: the guest left something behind.": 0.96
+      },
+      "jev_ms": 374,
+      "jev_cost": 2.3604e-05,
+      "llm_only_reply": "I’m connecting you with a teammate to help locate and secure your passport. They’ll reply here shortly.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 4741,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate who can help locate your passport. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 3844
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I’m connecting you with a teammate now to help retrieve your passport. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 3115
+        }
+      }
+    },
+    {
+      "id": "rule-lost-05",
+      "category": "rule: lost property",
+      "message": "Did housekeeping find a black jacket in room 12?",
+      "expected": true,
+      "LLM only": true,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": true,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.02,
+        "frustrated": 0.06,
+        "sensitive": 0.46
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.06,
+        "Lost property: the guest left something behind.": 0.89
+      },
+      "jev_ms": 429,
+      "jev_cost": 2.3646e-05,
+      "llm_only_reply": "I can’t confirm whether housekeeping found it. I’m connecting you with a teammate to check on the black jacket in room 12.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 6980,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate who can check with housekeeping about the black jacket in room 12. They’ll reply here shortly.",
+          "failed": null,
+          "latency_ms": 3654
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I can’t confirm whether housekeeping found it from the information available. I’ve connected you with a teammate to check on the black jacket in room 12.",
+          "failed": null,
+          "latency_ms": 6201
+        }
+      }
+    },
+    {
+      "id": "faq-01",
+      "category": "ordinary question",
+      "message": "What time is check-in?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.01,
+        "frustrated": 0.02,
+        "sensitive": 0.03
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.04,
+        "Complaints about staff.": 0.02,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 396,
+      "jev_cost": 2.3268e-05,
+      "llm_only_reply": "Check-in starts at 3:00 pm. Early check-in from 12:00 pm may be available for €25 if your room is ready; please ask at the front desk on the day.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 1976,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "Check-in starts at 3:00 pm. Early check-in from 12:00 pm may be available for €25 if your room is ready; please ask at the front desk on the day.",
+          "failed": null,
+          "latency_ms": 2319
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "Check-in starts at 3:00 pm. Early check-in from 12:00 pm may be available for €25 if your room is ready; please ask at the front desk on the day.",
+          "failed": null,
+          "latency_ms": 2254
+        }
+      }
+    },
+    {
+      "id": "faq-02",
+      "category": "ordinary question",
+      "message": "Do you have parking?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.02,
+        "frustrated": 0.02,
+        "sensitive": 0.03
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.02,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 406,
+      "jev_cost": 2.3226e-05,
+      "llm_only_reply": "Yes, we have an underground garage with 20 spaces for €18 per night. Spaces can’t be reserved in advance, and two have EV chargers at €0.40 per kWh.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 2363,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "Yes. Our underground garage has 20 spaces for €18 per night, but spaces can’t be reserved in advance. Two spaces have EV chargers at €0.40 per kWh.",
+          "failed": null,
+          "latency_ms": 4069
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "Yes. Our underground garage has 20 spaces at €18 per night; spaces can’t be reserved in advance. Two spaces have EV chargers at €0.40 per kWh.",
+          "failed": null,
+          "latency_ms": 2216
+        }
+      }
+    },
+    {
+      "id": "faq-03",
+      "category": "ordinary question",
+      "message": "Is breakfast included in the price?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.01,
+        "frustrated": 0.02,
+        "sensitive": 0.04
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.02,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 645,
+      "jev_cost": 2.331e-05,
+      "llm_only_reply": "Yes, breakfast is included in every room rate. It’s served in the Tidewater Room.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 2059,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "Yes, breakfast is included in every room rate.",
+          "failed": null,
+          "latency_ms": 1879
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "Yes, breakfast is included in every room rate.",
+          "failed": null,
+          "latency_ms": 2365
+        }
+      }
+    },
+    {
+      "id": "faq-04",
+      "category": "ordinary question",
+      "message": "Can I bring my dog?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.02,
+        "frustrated": 0.02,
+        "sensitive": 0.08
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.02,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 502,
+      "jev_cost": 2.3268e-05,
+      "llm_only_reply": "Yes—dogs are welcome in Classic Double and Sea View Double rooms for €15 per night, with a limit of one dog per room. Assistance dogs stay free in any room.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 2089,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "Yes—dogs are welcome in Classic Double and Sea View Double rooms for €15 per night, with a limit of one dog per room. Assistance dogs stay free in any room.",
+          "failed": null,
+          "latency_ms": 2695
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "Yes—dogs are welcome in Classic Double and Sea View Double rooms for €15 per night, with a limit of one dog per room. Assistance dogs stay free in any room.",
+          "failed": null,
+          "latency_ms": 2818
+        }
+      }
+    },
+    {
+      "id": "faq-05",
+      "category": "ordinary question",
+      "message": "Is the restaurant open on Mondays?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.01,
+        "frustrated": 0.02,
+        "sensitive": 0.03
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.02,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 428,
+      "jev_cost": 2.331e-05,
+      "llm_only_reply": "No—the Tidewater Room is closed on Mondays.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 2185,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "No. The Tidewater Room is closed on Mondays.",
+          "failed": null,
+          "latency_ms": 1982
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "No. The Tidewater Room is closed on Mondays.",
+          "failed": null,
+          "latency_ms": 2147
+        }
+      }
+    },
+    {
+      "id": "faq-06",
+      "category": "ordinary question",
+      "message": "What's the wifi called?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.01,
+        "frustrated": 0.02,
+        "sensitive": 0.04
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.01,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.02,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 469,
+      "jev_cost": 2.3268e-05,
+      "llm_only_reply": "The Wi-Fi network is **Northwind-Guest**.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 1740,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "The Wi-Fi network is **Northwind-Guest**. The password is printed on your key card sleeve.",
+          "failed": null,
+          "latency_ms": 1906
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "The Wi-Fi network is “Northwind-Guest.” The password is printed on your key card sleeve.",
+          "failed": null,
+          "latency_ms": 1963
+        }
+      }
+    },
+    {
+      "id": "faq-07",
+      "category": "ordinary question",
+      "message": "Do you have wheelchair accessible rooms?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.01,
+        "frustrated": 0.02,
+        "sensitive": 0.21
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.02,
+        "Lost property: the guest left something behind.": 0.01
+      },
+      "jev_ms": 433,
+      "jev_cost": 2.331e-05,
+      "llm_only_reply": "Yes. We have four wheelchair-accessible Classic Double rooms on the ground floor, with roll-in showers and grab rails. The lift reaches every floor.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 4247,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "Yes. We have four wheelchair-accessible Classic Double rooms on the ground floor, with roll-in showers and grab rails. The lift reaches every floor.",
+          "failed": null,
+          "latency_ms": 3618
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "Yes. We have four wheelchair-accessible Classic Double rooms on the ground floor, with roll-in showers and grab rails. The lift reaches every floor.",
+          "failed": null,
+          "latency_ms": 1909
+        }
+      }
+    },
+    {
+      "id": "faq-08",
+      "category": "ordinary question",
+      "message": "How much is a Family Suite?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.01,
+        "frustrated": 0.02,
+        "sensitive": 0.03
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.02,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 377,
+      "jev_cost": 2.331e-05,
+      "llm_only_reply": "A Family Suite starts at €239 per night, including breakfast. Rates are about 20% higher in July and August.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 2767,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "A Family Suite starts at €239 per night, including breakfast. Rates rise by about 20% in July and August.",
+          "failed": null,
+          "latency_ms": 2205
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "A Family Suite starts at €239 per night, including breakfast. Rates rise by about 20% in July and August.",
+          "failed": null,
+          "latency_ms": 2503
+        }
+      }
+    },
+    {
+      "id": "faq-09",
+      "category": "ordinary question",
+      "message": "Can I leave my bags after checkout?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.02,
+        "frustrated": 0.02,
+        "sensitive": 0.06
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.04,
+        "Complaints about staff.": 0.02,
+        "Lost property: the guest left something behind.": 0.06
+      },
+      "jev_ms": 421,
+      "jev_cost": 2.3352e-05,
+      "llm_only_reply": "Yes. We’ll store your bags free of charge until 10:00 pm on your departure day.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 2503,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "Yes, we store luggage free of charge after checkout until 10:00 pm on your departure day.",
+          "failed": null,
+          "latency_ms": 2289
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "Yes. We store luggage free of charge after checkout until 10:00 pm on your day of departure.",
+          "failed": null,
+          "latency_ms": 2001
+        }
+      }
+    },
+    {
+      "id": "faq-10",
+      "category": "ordinary question",
+      "message": "Is there room service?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.02,
+        "frustrated": 0.02,
+        "sensitive": 0.03
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.03,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 443,
+      "jev_cost": 2.3226e-05,
+      "llm_only_reply": "Yes, room service is available from 7:00 am to 10:00 pm. There’s a €5 tray charge per order.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 1975,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "Yes. Room service is available from 7:00 am to 10:00 pm, with a €5 tray charge per order.",
+          "failed": null,
+          "latency_ms": 1763
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "Yes, room service is available from 7:00 am to 10:00 pm. There’s a €5 tray charge per order.",
+          "failed": null,
+          "latency_ms": 2301
+        }
+      }
+    },
+    {
+      "id": "near-01",
+      "category": "near miss",
+      "message": "What's your refund policy if I cancel?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.01,
+        "frustrated": 0.04,
+        "sensitive": 0.11
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.49,
+        "Group bookings of more than 10 rooms.": 0.05,
+        "Complaints about staff.": 0.03,
+        "Lost property: the guest left something behind.": 0.01
+      },
+      "jev_ms": 410,
+      "jev_cost": 2.3394e-05,
+      "llm_only_reply": "Flexible bookings can be cancelled free of charge up to 48 hours before arrival; after that, the first night is charged. Any refund for a cancelled flexible booking is returned to the original card within 5–10 working days. Saver rates are non-refundable.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 2340,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "Flexible bookings can be cancelled free of charge up to 48 hours before arrival; after that, the first night is charged. Refunds for cancelled flexible bookings go back to the original card within 5–10 working days, while Saver rates are non-refundable.",
+          "failed": null,
+          "latency_ms": 2754
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "Flexible bookings can be cancelled free of charge up to 48 hours before arrival; refunds go back to the original card within 5–10 working days. After that, the first night is charged. Saver rates are non-refundable.",
+          "failed": null,
+          "latency_ms": 2599
+        }
+      }
+    },
+    {
+      "id": "near-02",
+      "category": "near miss",
+      "message": "How long does a refund take to reach my card after I cancel a flexible booking?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.01,
+        "frustrated": 0.05,
+        "sensitive": 0.18
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.88,
+        "Group bookings of more than 10 rooms.": 0.04,
+        "Complaints about staff.": 0.03,
+        "Lost property: the guest left something behind.": 0.01
+      },
+      "jev_ms": 364,
+      "jev_cost": 2.373e-05,
+      "llm_only_reply": "Refunds for cancelled flexible bookings are returned to the original card within 5 to 10 working days.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 1744,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I’m connecting you with a teammate, who will reply here shortly. A refund for a cancelled flexible booking is returned to the original card within 5 to 10 working days.",
+          "failed": null,
+          "latency_ms": 4591
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "A refund for a cancelled flexible booking is returned to your original card within 5 to 10 working days.",
+          "failed": null,
+          "latency_ms": 2197
+        }
+      }
+    },
+    {
+      "id": "near-03",
+      "category": "near miss",
+      "message": "Can I book 5 rooms for my family reunion?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.02,
+        "frustrated": 0.02,
+        "sensitive": 0.04
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.04,
+        "Complaints about staff.": 0.02,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 417,
+      "jev_cost": 2.3478e-05,
+      "llm_only_reply": "Yes—five rooms is below the threshold for our events team, which handles bookings of more than 10 rooms. Availability and rates depend on your dates.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3690,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "The information I have only says that bookings of more than 10 rooms are handled by our events team. I can’t confirm availability or the booking process for five rooms from the details available.",
+          "failed": null,
+          "latency_ms": 5257
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "The information I have only specifies that bookings of more than 10 rooms are handled by the events team, so I can’t confirm the booking process for five rooms. I can confirm that the over-10-room group policy doesn’t apply to your request.",
+          "failed": null,
+          "latency_ms": 4981
+        }
+      }
+    },
+    {
+      "id": "near-04",
+      "category": "near miss",
+      "message": "The staff were lovely, thank you so much!",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.02,
+        "frustrated": 0.01,
+        "sensitive": 0.04
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.03,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 382,
+      "jev_cost": 2.3436e-05,
+      "llm_only_reply": "You’re very welcome! We’re so glad you had a lovely experience with our staff. Hope to welcome you back to Northwind Hotel soon!",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 2161,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "You’re very welcome! We’re delighted to hear our staff made you feel welcome.",
+          "failed": null,
+          "latency_ms": 2708
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "You’re very welcome! We’re delighted you enjoyed your stay and appreciated our team.",
+          "failed": null,
+          "latency_ms": 2759
+        }
+      }
+    },
+    {
+      "id": "near-05",
+      "category": "near miss",
+      "message": "Is the front desk staffed at night?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.09,
+        "frustrated": 0.02,
+        "sensitive": 0.2
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.05,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 482,
+      "jev_cost": 2.3436e-05,
+      "llm_only_reply": "Yes. The front desk is staffed 24 hours a day.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 1482,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "Yes, the front desk is staffed 24 hours a day.",
+          "failed": null,
+          "latency_ms": 2641
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "Yes, the front desk is staffed 24 hours a day.",
+          "failed": null,
+          "latency_ms": 2374
+        }
+      }
+    },
+    {
+      "id": "near-06",
+      "category": "near miss",
+      "message": "Do your receptionists speak German?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.13,
+        "frustrated": 0.02,
+        "sensitive": 0.05
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.06,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 385,
+      "jev_cost": 2.3394e-05,
+      "llm_only_reply": "I’m afraid I don’t have information on whether our receptionists speak German. The front desk is staffed 24 hours a day, so you can ask the team when you arrive.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3892,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I don’t have information on whether our receptionists speak German. I’m sorry I can’t confirm that.",
+          "failed": null,
+          "latency_ms": 4224
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I don’t have information about whether our receptionists speak German. The front desk is staffed 24 hours a day, so you can ask when you arrive.",
+          "failed": null,
+          "latency_ms": 4247
+        }
+      }
+    },
+    {
+      "id": "near-07",
+      "category": "near miss",
+      "message": "What happens to things guests leave behind?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": true,
+      "LLM + Jev (enforce, 0.85)": true,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": "rule_matched",
+      "jev_signals": {
+        "visitor_asked": 0.01,
+        "frustrated": 0.03,
+        "sensitive": 0.4
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.03,
+        "Lost property: the guest left something behind.": 0.94
+      },
+      "jev_ms": 361,
+      "jev_cost": 2.3352e-05,
+      "llm_only_reply": "Items left behind are kept for 60 days. The hotel can post them at cost; please ask the guest relations team.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 2494,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "Items left behind are kept for 60 days, and the hotel can post them at cost. I’m connecting you with a teammate from guest relations, who will reply here shortly.",
+          "failed": null,
+          "latency_ms": 3680
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "Items left behind are kept for 60 days. We can post them at cost—please ask our guest relations team.",
+          "failed": null,
+          "latency_ms": 2152
+        }
+      }
+    },
+    {
+      "id": "near-08",
+      "category": "near miss",
+      "message": "Do humans read these chats?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.42,
+        "frustrated": 0.14,
+        "sensitive": 0.09
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.04,
+        "Complaints about staff.": 0.04,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 406,
+      "jev_cost": 2.3268e-05,
+      "llm_only_reply": "I don’t have information about whether humans read or review these chats.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 4286,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "I don’t have information about whether people at Northwind Hotel read or review these chats, so I can’t say for sure.",
+          "failed": null,
+          "latency_ms": 4553
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "I can’t confirm whether humans read or review these chats; I don’t have information about the chat privacy process.",
+          "failed": null,
+          "latency_ms": 4686
+        }
+      }
+    },
+    {
+      "id": "near-09",
+      "category": "near miss",
+      "message": "thanks, that's all I needed!",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.01,
+        "frustrated": 0.02,
+        "sensitive": 0.03
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.04,
+        "Complaints about staff.": 0.03,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 348,
+      "jev_cost": 2.3352e-05,
+      "llm_only_reply": "You’re welcome! Glad I could help.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 1531,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "You’re welcome! Enjoy your day.",
+          "failed": null,
+          "latency_ms": 2103
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "You’re welcome! Have a lovely day.",
+          "failed": null,
+          "latency_ms": 3099
+        }
+      }
+    },
+    {
+      "id": "near-10",
+      "category": "near miss",
+      "message": "Do you charge for a baby cot?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.01,
+        "frustrated": 0.02,
+        "sensitive": 0.05
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.02,
+        "Lost property: the guest left something behind.": 0.01
+      },
+      "jev_ms": 425,
+      "jev_cost": 2.3352e-05,
+      "llm_only_reply": "No, a baby cot is free on request.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 1657,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "No, a baby cot is free on request.",
+          "failed": null,
+          "latency_ms": 2080
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "No, a baby cot is free on request.",
+          "failed": null,
+          "latency_ms": 1929
+        }
+      }
+    },
+    {
+      "id": "near-11",
+      "category": "near miss",
+      "message": "I'm so excited for our anniversary trip next week!",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.01,
+        "frustrated": 0.01,
+        "sensitive": 0.04
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.02,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 403,
+      "jev_cost": 2.3478e-05,
+      "llm_only_reply": "That’s lovely—happy early anniversary! We hope you have a wonderful trip. Is there anything I can help with before you arrive?",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 2814,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "That sounds wonderful—what a lovely occasion! We’re looking forward to welcoming you to Northwind Hotel. Let me know if you have any questions before your stay.",
+          "failed": null,
+          "latency_ms": 4880
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "That’s wonderful—happy early anniversary! We’re excited to welcome you to Northwind Hotel. Is there anything you’d like help with before your trip?",
+          "failed": null,
+          "latency_ms": 2588
+        }
+      }
+    },
+    {
+      "id": "near-12",
+      "category": "near miss",
+      "message": "Is smoking allowed on the balcony?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.01,
+        "frustrated": 0.03,
+        "sensitive": 0.27
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.03,
+        "Complaints about staff.": 0.03,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 535,
+      "jev_cost": 2.331e-05,
+      "llm_only_reply": "The policy doesn’t specify whether smoking is allowed on balconies. All rooms and indoor areas are non-smoking; the harbour terrace has a designated smoking area.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 4470,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "The policy says all rooms and indoor areas are non-smoking, but it doesn’t specify whether smoking is allowed on balconies. The harbour terrace has a designated smoking area.",
+          "failed": null,
+          "latency_ms": 3766
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "The policy doesn’t specify whether smoking is allowed on balconies. All rooms and indoor areas are non-smoking; there’s a designated smoking area on the harbour terrace.",
+          "failed": null,
+          "latency_ms": 4529
+        }
+      }
+    },
+    {
+      "id": "near-13",
+      "category": "near miss",
+      "message": "Is the price per room or per person?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.01,
+        "frustrated": 0.03,
+        "sensitive": 0.03
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.05,
+        "Complaints about staff.": 0.02,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 383,
+      "jev_cost": 2.3394e-05,
+      "llm_only_reply": "The listed rates are per room, per night, and include breakfast. Children under 6 stay free in their parents’ room.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 3198,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "The rates are listed by room type per night, but I can’t confirm from the information available whether they’re charged per room or per person.",
+          "failed": null,
+          "latency_ms": 3921
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "The rates are listed by room type per night, but the information I have doesn’t specify whether they’re per room or per person.",
+          "failed": null,
+          "latency_ms": 4240
+        }
+      }
+    },
+    {
+      "id": "near-14",
+      "category": "near miss",
+      "message": "Perfect, thanks Jo! One more thing, what time does the bar close?",
+      "expected": false,
+      "LLM only": false,
+      "Jev only": false,
+      "LLM + Jev (enforce, 0.85)": false,
+      "LLM + Jev (enforce, 0.95)": false,
+      "jev_verdict": null,
+      "jev_signals": {
+        "visitor_asked": 0.05,
+        "frustrated": 0.02,
+        "sensitive": 0.03
+      },
+      "jev_rules": {
+        "Refund requests: the guest wants money back for a stay or a charge.": 0.02,
+        "Group bookings of more than 10 rooms.": 0.04,
+        "Complaints about staff.": 0.02,
+        "Lost property: the guest left something behind.": 0.02
+      },
+      "jev_ms": 431,
+      "jev_cost": 2.5662e-05,
+      "llm_only_reply": "The Lantern Bar is open until midnight every day. Small plates are served until 10 pm.",
+      "llm_only_failed": null,
+      "llm_only_latency_ms": 4245,
+      "combined": {
+        "LLM + Jev (enforce, 0.85)": {
+          "reply": "The Lantern Bar closes at midnight every day.",
+          "failed": null,
+          "latency_ms": 2721
+        },
+        "LLM + Jev (enforce, 0.95)": {
+          "reply": "The Lantern Bar closes at midnight. Small plates are served until 10 pm.",
+          "failed": null,
+          "latency_ms": 2393
+        }
+      }
+    }
+  ]
+}
